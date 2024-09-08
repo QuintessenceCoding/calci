@@ -6,14 +6,14 @@ body {
     background-color: #fdf0f6;
     margin: 0;
     font-family: 'Arial', sans-serif;
-    overflow: hidden; /* Prevents scrolling if content overflows */
+    overflow: hidden; /* Prevents unwanted scrollbars */
 }
 
 .calculator {
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    width: 350px; /* Increased width for more space */
+    width: 320px; /* Adjusted width */
     max-width: 100%; /* Ensure it doesn't exceed viewport width */
     background-color: #fff;
 }
@@ -21,9 +21,9 @@ body {
 .display {
     background-color: #ffe0e9;
     color: #d32f2f;
-    font-size: 2.5em; /* Adjusted font size */
+    font-size: 2.2em; /* Adjusted size */
     text-align: right;
-    padding: 20px; /* Increased padding */
+    padding: 20px; /* Ensure padding fits within the display */
     border-bottom: 2px solid #f2b2b2;
     box-sizing: border-box;
 }
@@ -37,12 +37,12 @@ body {
 .btn {
     background-color: #fce4ec;
     border: 1px solid #f8bbd0;
-    border-radius: 8px; /* Slightly smaller radius */
-    font-size: 1.6em; /* Adjusted font size */
-    padding: 20px; /* Adjusted padding */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1.4em; /* Adjusted font size */
+    padding: 15px; /* Adjusted padding */
     cursor: pointer;
     transition: background-color 0.3s, transform 0.1s;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
 .btn:hover {
@@ -56,7 +56,7 @@ body {
 .btn-equal {
     background-color: #f48fb1;
     color: #fff;
-    grid-column: span 2; /* Ensure it spans two columns */
+    grid-column: span 2; /* Spans two columns */
 }
 
 .btn-equal:hover {
@@ -64,5 +64,5 @@ body {
 }
 
 .btn-zero {
-    grid-column: span 2; /* Ensure it spans two columns */
+    grid-column: span 2; /* Spans two columns */
 }
